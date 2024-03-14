@@ -5,6 +5,7 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class Day1Task4 {
@@ -22,7 +23,7 @@ public class Day1Task4 {
 		8.  No need to automate CAPTCHA
 		9.  Click on Register*/
 		
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new EdgeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		driver.get("https://nasscom.in/");
@@ -37,6 +38,7 @@ public class Day1Task4 {
 		
 		selectCompany.selectByVisibleText("IT Consulting");
 		driver.findElement(By.id("edit-submit--2")).click();
+		driver.close();
 		
 		
 		
