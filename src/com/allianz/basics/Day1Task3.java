@@ -50,7 +50,7 @@ public class Day1Task3 {
         String errorMessage=driver.findElement(By.xpath("//div[text()='Sorry, We are not able to connect your corporate account. Please use your phone number to login and use other services.']")).getText();
         System.out.println("Error Message: "+errorMessage);
         driver.close();
-        
+        driver.quit();
 
 
 

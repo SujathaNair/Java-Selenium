@@ -39,6 +39,7 @@ public class Day1Task4 {
 		selectCompany.selectByVisibleText("IT Consulting");
 		driver.findElement(By.id("edit-submit--2")).click();
 		driver.close();
+		driver.quit();
 		
 		
 		

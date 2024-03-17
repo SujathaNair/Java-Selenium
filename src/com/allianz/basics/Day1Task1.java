@@ -56,6 +56,7 @@ public class Day1Task1 {
 		
 		
 		driver.close();
+		driver.quit();
 		
 		
 
